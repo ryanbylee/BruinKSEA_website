@@ -14,7 +14,7 @@ const Hero = () => {
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"/>
             </div> */}
             
-            <div className='font-sans font-bold flex justify-center relative my-60 z-10'>
+            <div className='font-sans font-bold flex justify-center relative my-48 z-10'>
                 <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
                 <img src='/logo.png' className='w-20 h-20 md:w-32 md:h-32 lg:w-40 lg:h-40' />
                     <TextGenerateEffect 
