@@ -4,8 +4,7 @@ import { TextGenerateEffect } from './ui/TextGenerateEffect';
 
 const Hero = () => {
   return (
-    <BackgroundGradientAnimation>
-        <div className="absolute z-50 inset-0 items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl">
+            <div className="relative z-50 inset-0 items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl">
             {/* <p className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
                 BruinKSEA
             </p> */}
@@ -13,22 +12,25 @@ const Hero = () => {
 
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"/>
             </div> */}
-            <div className='flex justify-center relative my-60 z-10'>
+            <div className='font-sans font-bold flex justify-center relative my-60 z-10'>
                 <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
-                    <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>BruinKSEA</h2>
+                    <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>Since 2009</h2>
                     <TextGenerateEffect 
                         className='text-center text-[40px] md:text-6xl lg:text-7xl'
                         
                         words='BruinKSEA'
                     />
+                    <TextGenerateEffect 
+                        className='text-center text-[20px] md:text-3xl lg:text-4xl'
+                        
+                        words='UCLA&apos;s Premier STEM-focused Korean Student Organization'
+                    />
                     <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-                        Hi, I&apos;m Ryan
+                        UCLA&apos;s Premier STEM-focused Korean Student Organization
                     </p>
                 </div>
             </div>
         </div>
-        
-  </BackgroundGradientAnimation>
   );
 };
 
