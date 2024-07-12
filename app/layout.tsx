@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "BruinKSEA",
   description: "UCLA's Premier STEM Korean Student Organization",
+  
 };
 
 export default function RootLayout({

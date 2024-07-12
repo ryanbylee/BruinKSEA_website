@@ -9,15 +9,19 @@ export const BentoGrid = ({
   children?: React.ReactNode;
 }) => {
   return (
-    <div
+    <div className="flex justify-center w-full">
+      <div
       className={cn(
-        "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3  gap-4 max-w-7xl lg:mx-auto mx-4",
+        "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3  gap-4 max-w-7xl w-full mx-4",
         className
       )}
     >
       {children}
     </div>
+
+    </div>
   );
+    
 };
 
 export const BentoGridItem = ({
@@ -53,7 +57,7 @@ export const BentoGridItem = ({
         backgroundColor: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,151,255,1) 100%)',
       }}
     >
-      {/* <div className={`${id === 6} && 'flex justify-center h-full'`}>
+      <div className={`${id === 6} && 'flex justify-center h-full'`}>
         <div className="w-full h-full absolute">
           {img &&(
             <img
@@ -75,7 +79,7 @@ export const BentoGridItem = ({
             />
           )}
         </div>
-      </div> */}
+      </div>
       <div className="">
         <div className=" font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
           {title}
