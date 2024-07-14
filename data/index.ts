@@ -18,8 +18,8 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "About BruinKSEA",
-      description: "",
+      title: "About",
+      description: "BruinKSEA was established in 2009 as part of the Southern-California YG (Young Generation) chapter of Korean-American Scientists and Engineers Association and has now grown to over 180 registered members.\r\nWe welcome undergraduates, graduates, and researchers of UCLA within the  breadth of science and engineering fields. KSEA provides valuable opportunities to network with other KSEA YG Chapters within Southern California (Harvey Mudd College, USC, CalTech, UCSD, UCI, and CSULB), develop leadership through activities and volunteering as a representative of BruinKSEA, participate in national conferences, and create life time experiences and memorable relationships within UCLA.",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-start",
