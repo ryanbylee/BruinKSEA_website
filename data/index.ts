@@ -8,12 +8,12 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "단체사진",
+      title: "",
       description: "",
       className: "lg:col-span-3 md:col-span-6 md:row-span-2 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
-      img: "/b1.jpg",
+      img: "KIM_9325-Edit-Edit.jpg",
       spareImg: "",
     },
     {
@@ -39,12 +39,12 @@ export const navItems = [
     {
       id: 4,
       title: "Calendar",
-      description: "Updated Weekly",
+      description: "",
       className: "lg:col-span-1 md:col-span-3 md:row-span-1",
       imgClassName: "",
       titleClassName: "justify-start",
-      img: "/grid.svg",
-      spareImg: "/b4.svg",
+      img: "",
+      spareImg: "",
     },
   
     {
@@ -54,7 +54,7 @@ export const navItems = [
       className: "md:col-span-2 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
+      img: "",
       spareImg: "/grid.svg",
     },
     {

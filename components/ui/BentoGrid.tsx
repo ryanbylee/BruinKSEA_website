@@ -1,5 +1,6 @@
 import { cn } from "@/utils/cn";
 import { color } from "framer-motion";
+import { Meteors } from "./meteors";
 
 export const BentoGrid = ({
   className,
@@ -49,12 +50,12 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 relative rounded-3xl group/bento  shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4 ",
+        "row-span-1 relative rounded-3xl group/bento  shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4",
         className
       )}
       style={{
-        background: 'rgb(2,0,36)',
-        backgroundColor: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,151,255,1) 100%)',
+        background: 'rgb(2,3,70)',
+        backgroundColor: 'linear-gradient(90deg, rgba(0,85,135,1) 0%, rgba(139,184,232,1) 50%, rgba(0,59,92,1) 100%)'
       }}
     >
       <div className={`${id === 6} && 'flex justify-center h-full'`}>
@@ -79,15 +80,22 @@ export const BentoGridItem = ({
             />
           )}
         </div>
-      </div>
-      <div className="">
-        <div className=" font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
-          {title}
+        {id === 6 && (
+          <Meteors number={20} className="absolute z-50 flex items-center justify-center text-white font-bold"/>
+            // <div className="absolute z-50 flex items-center justify-center text-white font-bold"/>
+        )}
+        <div className={cn(
+          titleClassName, 'group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10'
+        )}>
+          <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
+            {description}
+          </div>
+          <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10 mb-2 mt-2">
+            {title}
         </div>
-        <div className=" font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">
-          {description}
         </div>
       </div>
+
     </div>
   );
 };
