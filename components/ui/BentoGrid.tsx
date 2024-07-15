@@ -1,6 +1,13 @@
+'use client'
+
 import { cn } from "@/utils/cn";
 import { color } from "framer-motion";
 import { Meteors } from "./meteors";
+import { useState } from "react";
+import animationData from '@/data/confetti.json';
+import Lottie from "react-lottie";
+import MagicButton from "./MagicButton";
+import { IoCopyOutline } from "react-icons/io5";
 
 export const BentoGrid = ({
   className,
@@ -47,6 +54,11 @@ export const BentoGridItem = ({
   spareImg?: string;
 
 }) => {
+  const [copid, setCopid] = useState(false);
+  const handleCopy = () => {
+    navigator.clipboard.writeText('bruinksea@gmail.com');
+    setCopid(true);
+  }
   return (
     <div
       className={cn(
@@ -97,7 +109,7 @@ export const BentoGridItem = ({
             <div className="flex justify-center justify-items-center gap-1 lg:gap-2 w-full relative py-4">
               <div className="flex flex-col gap-3 lg:gap-8 ">
                 {['Sep. 11', 'Oct. 9', 'Nov. 23'].map((item) => (
-                  <span key={item} className="py-2  lg:py-4 lg:px-3 px-3 text-xs lg:text-base xl:text-2xl font-bold text-nowrap rounded-lg text-center bg-[#005587]">
+                  <span key={item} className="py-2  lg:py-4 lg:px-3 px-3 text-xs lg:text-base xl:text-xl font-bold text-nowrap rounded-lg text-center bg-[#005587]">
                     {item}
                   </span>
                 ))}
@@ -105,7 +117,7 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
                 {['Mock Interview', 'Alumni Night', 'Fall Retreat'].map((item) => (
-                  <span key={item} className="py-2  text-black lg:py-4 lg:px-3 px-3 text-xs lg:text-base font-bold xl:text-2xl text-nowrap rounded-lg text-center bg-[#8BB8E8]">
+                  <span key={item} className="py-2  text-black lg:py-4 lg:px-3 px-3 text-xs lg:text-base font-bold xl:text-xl text-nowrap rounded-lg text-center bg-[#8BB8E8]">
                     {item}
                   </span>
                 ))}
@@ -113,7 +125,7 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
                 {['@ Boelter Ball', '@ Ackerman Union', '@ Kerckhoff Hall'].map((item) => (
-                  <span key={item} className="py-2 text-black lg:py-4 lg:px-3 px-3 text-xs lg:text-base xl:text-2xl  text-nowrap rounded-lg text-center bg-[#8BB8E8]">
+                  <span key={item} className="py-2 text-black lg:py-4 lg:px-3 px-3 text-xs lg:text-base xl:text-xl  text-nowrap rounded-lg text-center bg-[#8BB8E8]">
                     {item}
                   </span>
                 ))}
@@ -121,7 +133,7 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
                 {['7PM PST', '5PM PST', '6PM PST'].map((item) => (
-                  <span key={item} className="py-2 text-black lg:py-4 lg:px-3 px-3 text-xs lg:text-base xl:text-2xl  text-nowrap rounded-lg text-center bg-[#8BB8E8]">
+                  <span key={item} className="py-2 text-black lg:py-4 lg:px-3 px-3 text-xs lg:text-base xl:text-xl  text-nowrap rounded-lg text-center bg-[#8BB8E8]">
                     {item}
                   </span>
                 ))}
@@ -132,6 +144,30 @@ export const BentoGridItem = ({
             
             
             
+          )}
+
+          {id === 6 && (
+            <div className="mt-5 relative">
+              <div className={'absolute -bottom-5 right-0'}>
+                <Lottie options={{
+                  loop: copid,
+                  autoplay: copid,
+                  animationData: animationData,
+                  rendererSettings:{
+                    preserveAspectRatio: 'xMidYMid slice',
+                  }
+
+                }}/>
+
+              </div>
+              <MagicButton
+                title={copid ? 'Email copied' : 'Copy Email'}
+                icon={<IoCopyOutline />}
+                position='left'
+                handleClick={handleCopy}
+                />
+
+            </div>
           )}
           
         </div>

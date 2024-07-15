@@ -13,7 +13,7 @@ export const navItems = [
       className: "lg:col-span-3 md:col-span-6 md:row-span-2 lg:min-h-[60vh]",
       imgClassName: "w-full h-full object-cover",
       titleClassName: "justify-end",
-      img: "KIM_9325-Edit-Edit.jpg",
+      img: "",
       spareImg: "",
     },
     {
