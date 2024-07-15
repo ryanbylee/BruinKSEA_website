@@ -110,13 +110,13 @@ export const BentoGridItem = ({
             <div className="flex justify-center  w-full relative py-4 lg:py-16">
               <div className="flex flex-col gap-3 lg:gap-8">
                 {['Sep. 11', 'Oct. 9', 'Nov. 23'].map((item) => (
-                  <div className="flex items-center bg-[#005587] rounded-l-lg px-3">
+                  <div key={item} className="flex items-center bg-[#005587] rounded-l-lg px-3">
                     <IconContext.Provider value={{ color: "white", className: "size-4 max-xs:hidden" }}>
                       <div>
                         <IoCalendar />
                       </div>
                     </IconContext.Provider>
-                    <span key={item} className="py-2 text-white rounded-l-lg pl-2 lg:py-4 max-sm:text-nowrap text-xs  lg:text-sm text-center ">
+                    <span className="py-2 text-white rounded-l-lg pl-2 lg:py-4 max-sm:text-nowrap text-xs  lg:text-sm text-center ">
                     
                     {item}
                     </span>
@@ -126,13 +126,13 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
                 {['Mock Interview', 'Alumni Night', 'Fall Retreat'].map((item) => (
-                  <div className="flex items-center bg-[#8BB8E8] bg-opacity-50 px-3">
+                  <div key={item} className="flex items-center bg-[#8BB8E8] bg-opacity-50 px-3">
                     <IconContext.Provider value={{ color: "black", className: "size-4 max-xs:hidden" }}>
                       <div>
                         <IoList />
                       </div>
                     </IconContext.Provider>
-                    <span key={item} className="py-2 text-black pl-2 lg:py-4 text-xs max-sm:text-nowrap lg:text-sm text-center ">
+                    <span className="py-2 text-black pl-2 lg:py-4 text-xs max-sm:text-nowrap lg:text-sm text-center ">
                     
                     {item}
                     </span>
@@ -143,13 +143,13 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
                 {['Boelter Ball', 'Ackerman Union', 'Kerckhoff Hall'].map((item) => (
-                  <div className="flex items-center bg-[#8BB8E8] bg-opacity-50 px-3">
+                  <div key={item} className="flex items-center bg-[#8BB8E8] bg-opacity-50 px-3">
                     <IconContext.Provider value={{ color: "black", className: "size-4 max-xs:hidden" }}>
                       <div>
                         <IoLocation />
                       </div>
                     </IconContext.Provider>
-                    <span key={item} className="py-2 text-black lg:py-4 text-xs pl-2 max-sm:text-nowrap lg:text-sm text-center ">
+                    <span className="py-2 text-black lg:py-4 text-xs pl-2 max-sm:text-nowrap lg:text-sm text-center ">
                     
                     {item}
                     </span>
@@ -159,13 +159,13 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
                 {['7PM PST', '5PM PST', '6PM PST'].map((item) => (
-                  <div className="flex items-center bg-[#8BB8E8] bg-opacity-50 rounded-r-lg px-3">
+                  <div key={item} className="flex items-center bg-[#8BB8E8] bg-opacity-50 rounded-r-lg px-3">
                     <IconContext.Provider value={{ color: "black", className: "size-4 max-xs:hidden" }}>
                       <div>
                         <IoTime />
                       </div>
                     </IconContext.Provider>
-                    <span key={item} className="py-2 text-black pl-2 lg:py-4  text-xs max-sm:text-nowrap lg:text-sm text-center ">
+                    <span className="py-2 text-black pl-2 lg:py-4  text-xs max-sm:text-nowrap lg:text-sm text-center ">
                     
                     {item}
                     </span>
