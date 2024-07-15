@@ -32,7 +32,7 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className={`bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/100 to-white/50' } opacity-0`}
+              className={`bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/40 opacity-0`}
             >
               {word}{" "}
             </motion.span>
