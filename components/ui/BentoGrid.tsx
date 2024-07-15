@@ -70,7 +70,7 @@ export const BentoGridItem = ({
         backgroundColor: 'linear-gradient(90deg, rgba(0,85,135,1) 0%, rgba(139,184,232,1) 50%, rgba(0,59,92,1) 100%)'
       }}
     >
-      <div className={`${id === 6} && 'flex justify-center h-full'`}>
+      <div className={`${id === 6 && 'flex justify-center'} h-full`}>
         <div className="w-full h-full absolute">
           {img &&(
             <img
@@ -109,7 +109,7 @@ export const BentoGridItem = ({
             <div className="flex justify-center justify-items-center gap-1 lg:gap-2 w-full relative py-4">
               <div className="flex flex-col gap-3 lg:gap-8 ">
                 {['Sep. 11', 'Oct. 9', 'Nov. 23'].map((item) => (
-                  <span key={item} className="py-2  lg:py-4 lg:px-3 px-3 text-xs lg:text-base xl:text-xl font-bold text-nowrap rounded-lg text-center bg-[#005587]">
+                  <span key={item} className="py-2  lg:py-4 lg:px-3 px-3 text-xs lg:text-base xl:text-xl font-bold sm:text-wrap text-nowrap rounded-lg text-center bg-[#005587]">
                     {item}
                   </span>
                 ))}
@@ -117,7 +117,7 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
                 {['Mock Interview', 'Alumni Night', 'Fall Retreat'].map((item) => (
-                  <span key={item} className="py-2  text-black lg:py-4 lg:px-3 px-3 text-xs lg:text-base font-bold xl:text-xl text-nowrap rounded-lg text-center bg-[#8BB8E8]">
+                  <span key={item} className="py-2  text-black lg:py-4 lg:px-3 px-3 text-xs lg:text-base font-bold sm:text-wrap xl:text-xl text-nowrap rounded-lg text-center bg-[#8BB8E8]">
                     {item}
                   </span>
                 ))}
@@ -125,7 +125,7 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
                 {['@ Boelter Ball', '@ Ackerman Union', '@ Kerckhoff Hall'].map((item) => (
-                  <span key={item} className="py-2 text-black lg:py-4 lg:px-3 px-3 text-xs lg:text-base xl:text-xl  text-nowrap rounded-lg text-center bg-[#8BB8E8]">
+                  <span key={item} className="py-2 text-black lg:py-4 lg:px-3 px-3 text-xs lg:text-base xl:text-xl sm:text-wrap text-nowrap rounded-lg text-center bg-[#8BB8E8]">
                     {item}
                   </span>
                 ))}
@@ -133,7 +133,7 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
                 {['7PM PST', '5PM PST', '6PM PST'].map((item) => (
-                  <span key={item} className="py-2 text-black lg:py-4 lg:px-3 px-3 text-xs lg:text-base xl:text-xl  text-nowrap rounded-lg text-center bg-[#8BB8E8]">
+                  <span key={item} className="py-2 text-black lg:py-4 lg:px-3 px-3 text-xs lg:text-base xl:text-xl sm:text-wrap text-nowrap rounded-lg text-center bg-[#8BB8E8]">
                     {item}
                   </span>
                 ))}
