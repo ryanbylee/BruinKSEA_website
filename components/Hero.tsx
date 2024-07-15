@@ -17,15 +17,16 @@ const Hero = () => {
             <div className='font-sans font-bold flex justify-center relative my-60 z-10'>
                 <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
                 <img src='/logo.png' className='w-20 h-20 md:w-32 md:h-32 lg:w-40 lg:h-40' />
-                    <TextGenerateEffect 
-                        className='text-center text-[40px] md:text-6xl lg:text-7xl'
+        
+                        <div className='text-center text-[40px] md:text-6xl lg:text-7xl'>
+                            BruinKSEA
+                        </div>
                         
-                        words='BruinKSEA'
-                    />
+                
                     <TextGenerateEffect 
                         className='text-center text-[20px] md:text-3xl lg:text-4xl'
                         
-                        words='UCLA&apos;s Premier STEM-focused Korean Student Organization'
+                        words='Where Scientists and Engineers at UCLA Connect.'
                     />
 
                 </div>
