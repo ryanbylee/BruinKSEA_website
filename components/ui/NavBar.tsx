@@ -92,7 +92,7 @@ const DATA = {
 
 export function NavBar() {
   return (
-    <div className="flex fixed w-full flex-col items-center justify-center overflow-hidden rounded-lg max-sm:bottom-4 bottom-12 z-50">
+    <div className="flex fixed w-full flex-col items-center justify-center overflow-hidden rounded-lg top-0 z-50">
 
       <TooltipProvider>
         <Dock direction="middle">
