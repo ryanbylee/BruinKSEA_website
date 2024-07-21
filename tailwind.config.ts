@@ -1,3 +1,4 @@
+import {nextui} from '@nextui-org/theme';
 import type { Config } from "tailwindcss";
 
 const svgToDataUri = require("mini-svg-data-uri");
@@ -15,6 +16,7 @@ const config = {
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
     "./data/**/*.{ts,tsx}",
+    "./node_modules/@nextui-org/theme/dist/components/[object Object].js"
   ],
   prefix: "",
   theme: {
@@ -158,7 +160,7 @@ const config = {
         },
         { values: flattenColorPalette(theme("backgroundColor")), type: "color" }
       );
-    },
+    },nextui(),
   ],
 } satisfies Config;
 
